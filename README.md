@@ -10,13 +10,4 @@ This is a RESTful API for managing cars and their images. The API allows users t
 
 - Go (1.16+)
 - MySQL Database
-- Environment Variables:
-  - `ACCESS_TOKEN_SECRET`: Secret key for JWT token generation
 
-## Setup Instructions
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/car-management-api.git
-cd car-management-api
