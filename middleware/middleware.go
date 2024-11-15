@@ -13,7 +13,7 @@ func Middleware(router *gin.Engine) {
 		AllowOrigins:     []string{"http://localhost:3000"},
 		AllowMethods:     []string{"GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Accept", "Content-Type", "Authorization", "Upgrade", "Connection"},
-		AllowCredentials: false,
+		AllowCredentials: true,
 	}))
 	router.OPTIONS("/*path", func(c *gin.Context) {
 		c.Status(200)

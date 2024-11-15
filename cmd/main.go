@@ -11,12 +11,16 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
 	"github.com/kanhaiyagupta9045/car_management/databases"
 	"github.com/kanhaiyagupta9045/car_management/middleware"
 	"github.com/kanhaiyagupta9045/car_management/routes"
 )
 
 func init() {
+	if err := godotenv.Load("../.env"); err != nil {
+		log.Fatal(err.Error())
+	}
 	databases.DatabaseConnect()
 }
 
